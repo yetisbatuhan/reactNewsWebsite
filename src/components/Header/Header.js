@@ -29,7 +29,7 @@ const Header = () => {
   <img className='md:hidden mx-auto' onClick={() => setMenu(!menu)} src="https://img.icons8.com/ios/50/000000/menu--v7.png" alt="menu--v7" />
   {menu === false ? (
     menuList.map((category, index) => (
-      <a to={category} className='sm:px-1 md:px-2 hidden md:inline-block pt-3 font-bold text-[20px] hover:text-red-600' key={index}>{category}</a>
+      <Link to={category} className='sm:px-1 md:px-2 hidden md:inline-block pt-3 font-bold text-[20px] hover:text-red-600' key={index}>{category}</Link>
     ))
   ) : (
     menuList.map((category, index) => (

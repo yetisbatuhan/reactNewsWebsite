@@ -9,6 +9,7 @@ import Science from './pages/Science';
 import General from './pages/General';
 import Sports from './pages/Sports';
 import Technology from './pages/Technology';
+import Header from './components/Header/Header';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
    
     
         <Routes>
-          <Route path='/' element={<Main />} />
+          <Route path='/' element={<Header />} />
           <Route path='/Business' element={<Business />} />
           <Route path='/Entertainment' element={<Entertainment />} />
           <Route path='/Health' element={<Health />} />
